@@ -1,5 +1,6 @@
 "use client"
 
+import { useMemo } from "react"
 import {
   BarChart,
   Bar,
@@ -9,9 +10,19 @@ import {
   ResponsiveContainer,
   Cell,
 } from "recharts"
-import { rankingData } from "@/lib/car-data"
+import { getRankingDataFromCars, rankingData } from "@/lib/car-data"
+import type { Car } from "@/lib/car-data"
 
-export function RankingChart() {
+interface RankingChartProps {
+  /** 전달 시 이 목록 기준 인기 Top5 (viewCount → 가격순) */
+  cars?: Car[]
+}
+
+export function RankingChart({ cars }: RankingChartProps) {
+  const data = useMemo(
+    () => (cars && cars.length > 0 ? getRankingDataFromCars(cars) : rankingData),
+    [cars],
+  )
   return (
     <section className="mb-8">
       <h2 className="mb-4 text-lg font-bold text-foreground">
@@ -20,7 +31,7 @@ export function RankingChart() {
       <div className="rounded-xl border border-border bg-card p-4">
         <ResponsiveContainer width="100%" height={280}>
           <BarChart
-            data={rankingData}
+            data={data}
             layout="vertical"
             margin={{ top: 0, right: 16, bottom: 0, left: 0 }}
           >
@@ -48,7 +59,7 @@ export function RankingChart() {
               ]}
             />
             <Bar dataKey="value" radius={[0, 6, 6, 0]} barSize={22}>
-              {rankingData.map((entry, index) => (
+              {data.map((entry, index) => (
                 <Cell key={`cell-${index}`} fill={entry.fill} />
               ))}
             </Bar>

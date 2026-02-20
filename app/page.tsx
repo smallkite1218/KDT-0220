@@ -9,27 +9,41 @@ import { RankingChart } from "@/components/ranking-chart"
 import { VehicleCard } from "@/components/vehicle-card"
 import { DetailModal } from "@/components/detail-modal"
 import { FloatingChatbot } from "@/components/floating-chatbot"
-import { cars } from "@/lib/car-data"
-import type { Car } from "@/lib/car-data"
-import { useToast } from "@/hooks/use-toast"
+import { defaultCars } from "@/lib/default-cars"
+import {
+  type Car,
+  getCategoryOptionsFromCars,
+  getFuelOptionsFromCars,
+  getLifestyleTagsFromCars,
+} from "@/lib/car-data"
+import { useCarLiked } from "@/contexts/car-liked-context"
 
 export type SortOption = "popular" | "price"
 
 export default function Home() {
+  const [carList] = useState<Car[]>(defaultCars)
   const [budget, setBudget] = useState([1500, 8000])
   const [fuelTypes, setFuelTypes] = useState<string[]>([])
   const [categories, setCategories] = useState<string[]>([])
   const [lifestyles, setLifestyles] = useState<string[]>([])
   const [brands, setBrands] = useState<string[]>([])
   const [sortBy, setSortBy] = useState<SortOption>("popular")
-  const [likedIds, setLikedIds] = useState<Set<string>>(new Set())
+  const { likedIds, toggleLike, isLiked } = useCarLiked()
   const [selectedCar, setSelectedCar] = useState<Car | null>(null)
   const [modalOpen, setModalOpen] = useState(false)
-  const [isLoggedIn] = useState(false)
-  const { toast } = useToast()
+
+  const categoryOptions = useMemo(
+    () => getCategoryOptionsFromCars(carList),
+    [carList],
+  )
+  const fuelOptions = useMemo(() => getFuelOptionsFromCars(carList), [carList])
+  const lifestyleTagsList = useMemo(
+    () => getLifestyleTagsFromCars(carList),
+    [carList],
+  )
 
   const filteredCars = useMemo(() => {
-    let list = cars.filter((car) => {
+    let list = carList.filter((car) => {
       const inBudget = car.price >= budget[0] && car.price <= budget[1]
       const fuelMatch =
         fuelTypes.length === 0 || fuelTypes.includes(car.fuelType)
@@ -49,14 +63,14 @@ export default function Home() {
       )
     }
     return list
-  }, [budget, fuelTypes, categories, lifestyles, brands, sortBy])
+  }, [carList, budget, fuelTypes, categories, lifestyles, brands, sortBy])
 
   const fallbackCars = useMemo(() => {
     if (filteredCars.length > 0) return []
     const pad = Math.max(500, Math.ceil(budget[1] * 0.1))
     const low = Math.max(0, budget[0] - pad)
     const high = Math.min(55000, budget[1] + pad)
-    return cars
+    return carList
       .filter(
         (car) =>
           car.price >= low &&
@@ -66,24 +80,7 @@ export default function Home() {
           (brands.length === 0 || brands.includes(car.brand)),
       )
       .slice(0, 5)
-  }, [filteredCars.length, budget, categories, fuelTypes, brands])
-
-  function toggleLike(id: string) {
-    if (!isLoggedIn) {
-      toast({
-        title: "로그인이 필요합니다",
-        description: "찜하기 기능은 로그인 후 이용할 수 있습니다.",
-        variant: "default",
-      })
-      return
-    }
-    setLikedIds((prev) => {
-      const next = new Set(prev)
-      if (next.has(id)) next.delete(id)
-      else next.add(id)
-      return next
-    })
-  }
+  }, [carList, filteredCars.length, budget, categories, fuelTypes, brands])
 
   function openDetail(car: Car) {
     setSelectedCar(car)
@@ -95,6 +92,7 @@ export default function Home() {
       <GNB />
       <div className="flex flex-1">
         <FilterSidebar
+          cars={carList}
           budget={budget}
           setBudget={setBudget}
           fuelTypes={fuelTypes}
@@ -105,9 +103,13 @@ export default function Home() {
           setLifestyles={setLifestyles}
           brands={brands}
           setBrands={setBrands}
+          categoryOptions={categoryOptions}
+          fuelOptions={fuelOptions}
+          lifestyleTags={lifestyleTagsList}
         />
         <main className="flex-1 overflow-y-auto p-4 lg:p-6">
           <MobileFilter
+            cars={carList}
             budget={budget}
             setBudget={setBudget}
             fuelTypes={fuelTypes}
@@ -118,14 +120,18 @@ export default function Home() {
             setLifestyles={setLifestyles}
             brands={brands}
             setBrands={setBrands}
+            categoryOptions={categoryOptions}
+            fuelOptions={fuelOptions}
+            lifestyleTags={lifestyleTagsList}
           />
 
           <AIStrategySection
             budget={budget}
             fuelTypes={fuelTypes}
             lifestyles={lifestyles}
+            cars={carList}
           />
-          <RankingChart />
+          <RankingChart cars={carList} />
 
           {/* Vehicle Lineup */}
           <section>
@@ -155,7 +161,7 @@ export default function Home() {
                   <VehicleCard
                     key={car.id}
                     car={car}
-                    liked={likedIds.has(car.id)}
+                    liked={isLiked(car.id)}
                     onToggleLike={() => toggleLike(car.id)}
                     onCompare={() => openDetail(car)}
                   />

@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from 'next'
 import { Noto_Sans_KR, Geist_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import { Toaster } from '@/components/ui/toaster'
+import { CarLikedProvider } from '@/contexts/car-liked-context'
 import './globals.css'
 
 const notoSansKR = Noto_Sans_KR({ subsets: ["latin"], variable: "--font-sans" });
@@ -44,9 +45,11 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body className={`${notoSansKR.variable} ${geistMono.variable} font-sans antialiased`}>
-        {children}
-        <Toaster />
-        <Analytics />
+        <CarLikedProvider>
+          {children}
+          <Toaster />
+          <Analytics />
+        </CarLikedProvider>
       </body>
     </html>
   )

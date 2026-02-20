@@ -1,0 +1,1527 @@
+[
+  {
+    "id": "danawa-4563-0",
+    "brand": "KIA",
+    "model": "쏘렌토",
+    "price": 3580,
+    "fuelType": "hybrid",
+    "category": "suv",
+    "year": 2023,
+    "image": "http://autoimg.danawa.com/photo/4563/model_200.png",
+    "tags": [
+      "KIA",
+      "SUV"
+    ],
+    "lifestyles": [],
+    "origin": "domestic",
+    "specs": {
+      "price": 70,
+      "fuel": 50,
+      "design": 5,
+      "space": 5,
+      "safety": 5
+    },
+    "aiComment": "2023년 출시.                       2023.08.  출시                      중형SUV                  가…",
+    "viewCount": 0
+  },
+  {
+    "id": "danawa-4684-1",
+    "brand": "KIA",
+    "model": "스포티지",
+    "price": 2793,
+    "fuelType": "hybrid",
+    "category": "suv",
+    "year": 2024,
+    "image": "http://autoimg.danawa.com/photo/4684/model_200.png",
+    "tags": [
+      "KIA",
+      "SUV"
+    ],
+    "lifestyles": [],
+    "origin": "domestic",
+    "specs": {
+      "price": 70,
+      "fuel": 40,
+      "design": 5,
+      "space": 5,
+      "safety": 5
+    },
+    "aiComment": "2024년 출시.                       2024.11.  출시                      중형SUV                  L…",
+    "viewCount": 0
+  },
+  {
+    "id": "danawa-4586-2",
+    "brand": "KIA",
+    "model": "카니발",
+    "price": 3551,
+    "fuelType": "hybrid",
+    "category": "mpv",
+    "year": 2023,
+    "image": "http://autoimg.danawa.com/photo/4586/model_200.png",
+    "tags": [
+      "KIA",
+      "MPV"
+    ],
+    "lifestyles": [],
+    "origin": "domestic",
+    "specs": {
+      "price": 70,
+      "fuel": 40,
+      "design": 5,
+      "space": 5,
+      "safety": 5
+    },
+    "aiComment": "2023년 출시.                       2023.11.  출시                      대형MPV                  가…",
+    "viewCount": 0
+  },
+  {
+    "id": "danawa-4763-3",
+    "brand": "KIA",
+    "model": "디 올 뉴 셀토스",
+    "price": 2477,
+    "fuelType": "hybrid",
+    "category": "suv",
+    "year": 2026,
+    "image": "http://autoimg.danawa.com/photo/4763/model_200.png",
+    "tags": [
+      "KIA",
+      "SUV"
+    ],
+    "lifestyles": [],
+    "origin": "domestic",
+    "specs": {
+      "price": 90,
+      "fuel": 60,
+      "design": 5,
+      "space": 5,
+      "safety": 5
+    },
+    "aiComment": "2026년 출시.                       2026.01.  출시                      소형SUV                  가…",
+    "viewCount": 0
+  },
+  {
+    "id": "danawa-4188-4",
+    "brand": "HYUNDAI",
+    "model": "그랜저",
+    "price": 3712,
+    "fuelType": "hybrid",
+    "category": "sedan",
+    "year": 2022,
+    "image": "http://autoimg.danawa.com/photo/4188/model_200.png",
+    "tags": [
+      "HYUNDAI",
+      "SEDAN"
+    ],
+    "lifestyles": [],
+    "origin": "domestic",
+    "specs": {
+      "price": 70,
+      "fuel": 40,
+      "design": 5,
+      "space": 5,
+      "safety": 5
+    },
+    "aiComment": "2022년 출시.                       2022.11.  출시                      준대형                  LPG…",
+    "viewCount": 0
+  },
+  {
+    "id": "danawa-4455-5",
+    "brand": "HYUNDAI",
+    "model": "아반떼",
+    "price": 2034,
+    "fuelType": "hybrid",
+    "category": "sedan",
+    "year": 2023,
+    "image": "http://autoimg.danawa.com/photo/4455/model_200.png",
+    "tags": [
+      "HYUNDAI",
+      "SEDAN"
+    ],
+    "lifestyles": [],
+    "origin": "domestic",
+    "specs": {
+      "price": 90,
+      "fuel": 50,
+      "design": 5,
+      "space": 5,
+      "safety": 5
+    },
+    "aiComment": "2023년 출시.                       2023.03.  출시                      준중형                  LPG…",
+    "viewCount": 0
+  },
+  {
+    "id": "danawa-4466-6",
+    "brand": "HYUNDAI",
+    "model": "쏘나타 디 엣지",
+    "price": 2560,
+    "fuelType": "hybrid",
+    "category": "sedan",
+    "year": 2023,
+    "image": "http://autoimg.danawa.com/photo/4466/model_200.png",
+    "tags": [
+      "HYUNDAI",
+      "SEDAN"
+    ],
+    "lifestyles": [],
+    "origin": "domestic",
+    "specs": {
+      "price": 70,
+      "fuel": 50,
+      "design": 5,
+      "space": 5,
+      "safety": 5
+    },
+    "aiComment": "2023년 출시.                       2023.05.  출시                      중형                  LPG,…",
+    "viewCount": 0
+  },
+  {
+    "id": "danawa-4699-7",
+    "brand": "HYUNDAI",
+    "model": "디 올 뉴 팰리세이드",
+    "price": 4383,
+    "fuelType": "hybrid",
+    "category": "suv",
+    "year": 2025,
+    "image": "http://autoimg.danawa.com/photo/4699/model_200.png",
+    "tags": [
+      "HYUNDAI",
+      "SUV"
+    ],
+    "lifestyles": [],
+    "origin": "domestic",
+    "specs": {
+      "price": 50,
+      "fuel": 40,
+      "design": 5,
+      "space": 5,
+      "safety": 5
+    },
+    "aiComment": "2025년 출시.                       2025.01.  출시                      대형SUV                  가…",
+    "viewCount": 0
+  },
+  {
+    "id": "danawa-4435-8",
+    "brand": "HYUNDAI",
+    "model": "싼타페",
+    "price": 3606,
+    "fuelType": "hybrid",
+    "category": "suv",
+    "year": 2023,
+    "image": "http://autoimg.danawa.com/photo/4435/model_200.png",
+    "tags": [
+      "HYUNDAI",
+      "SUV"
+    ],
+    "lifestyles": [],
+    "origin": "domestic",
+    "specs": {
+      "price": 70,
+      "fuel": 50,
+      "design": 5,
+      "space": 5,
+      "safety": 5
+    },
+    "aiComment": "2023년 출시.                       2023.08.  출시                      중형SUV                  가…",
+    "viewCount": 0
+  },
+  {
+    "id": "danawa-4592-9",
+    "brand": "HYUNDAI",
+    "model": "투싼",
+    "price": 2805,
+    "fuelType": "hybrid",
+    "category": "suv",
+    "year": 2023,
+    "image": "http://autoimg.danawa.com/photo/4592/model_200.png",
+    "tags": [
+      "HYUNDAI",
+      "SUV"
+    ],
+    "lifestyles": [],
+    "origin": "domestic",
+    "specs": {
+      "price": 70,
+      "fuel": 60,
+      "design": 5,
+      "space": 5,
+      "safety": 5
+    },
+    "aiComment": "2023년 출시.                       2023.12.  출시                      중형SUV                  가…",
+    "viewCount": 0
+  },
+  {
+    "id": "danawa-4689-10",
+    "brand": "KIA",
+    "model": "레이",
+    "price": 1441,
+    "fuelType": "gasoline",
+    "category": "sedan",
+    "year": 2022,
+    "image": "http://autoimg.danawa.com/photo/4689/model_200.png",
+    "tags": [
+      "KIA",
+      "SEDAN"
+    ],
+    "lifestyles": [],
+    "origin": "domestic",
+    "specs": {
+      "price": 90,
+      "fuel": 60,
+      "design": 5,
+      "space": 5,
+      "safety": 5
+    },
+    "aiComment": "2022년 출시.                       2022.09.  출시                      경차                  가솔린9…",
+    "viewCount": 0
+  },
+  {
+    "id": "danawa-4714-11",
+    "brand": "KIA",
+    "model": "PV5",
+    "price": 4200,
+    "fuelType": "ev",
+    "category": "mpv",
+    "year": 2025,
+    "image": "http://autoimg.danawa.com/photo/4714/model_200.png",
+    "tags": [
+      "KIA",
+      "MPV"
+    ],
+    "lifestyles": [],
+    "origin": "domestic",
+    "specs": {
+      "price": 50,
+      "fuel": 20,
+      "design": 5,
+      "space": 5,
+      "safety": 5
+    },
+    "aiComment": "2025년 출시.                       2025.06.  출시                      중형MPV                  전…",
+    "viewCount": 0
+  },
+  {
+    "id": "danawa-4647-12",
+    "brand": "KIA",
+    "model": "EV3",
+    "price": 3995,
+    "fuelType": "ev",
+    "category": "suv",
+    "year": 2024,
+    "image": "http://autoimg.danawa.com/photo/4647/model_200.png",
+    "tags": [
+      "KIA",
+      "SUV"
+    ],
+    "lifestyles": [],
+    "origin": "domestic",
+    "specs": {
+      "price": 70,
+      "fuel": 20,
+      "design": 5,
+      "space": 5,
+      "safety": 5
+    },
+    "aiComment": "2024년 출시.                       2024.07.  출시                      소형SUV                  전…",
+    "viewCount": 0
+  },
+  {
+    "id": "danawa-4361-13",
+    "brand": "HYUNDAI",
+    "model": "코나",
+    "price": 2409,
+    "fuelType": "hybrid",
+    "category": "suv",
+    "year": 2023,
+    "image": "http://autoimg.danawa.com/photo/4361/model_200.png",
+    "tags": [
+      "HYUNDAI",
+      "SUV"
+    ],
+    "lifestyles": [],
+    "origin": "domestic",
+    "specs": {
+      "price": 90,
+      "fuel": 60,
+      "design": 5,
+      "space": 5,
+      "safety": 5
+    },
+    "aiComment": "2023년 출시.                       2023.01.  출시                      소형SUV                  가…",
+    "viewCount": 0
+  },
+  {
+    "id": "danawa-4499-14",
+    "brand": "KIA",
+    "model": "EV5",
+    "price": 4153,
+    "fuelType": "ev",
+    "category": "suv",
+    "year": 2025,
+    "image": "http://autoimg.danawa.com/photo/4499/model_200.png",
+    "tags": [
+      "KIA",
+      "SUV"
+    ],
+    "lifestyles": [],
+    "origin": "domestic",
+    "specs": {
+      "price": 50,
+      "fuel": 20,
+      "design": 5,
+      "space": 5,
+      "safety": 5
+    },
+    "aiComment": "2025년 출시.                       2025.09.  출시                      중형SUV                  전…",
+    "viewCount": 0
+  },
+  {
+    "id": "danawa-4665-15",
+    "brand": "KIA",
+    "model": "K8",
+    "price": 3529,
+    "fuelType": "hybrid",
+    "category": "sedan",
+    "year": 2024,
+    "image": "http://autoimg.danawa.com/photo/4665/model_200.png",
+    "tags": [
+      "KIA",
+      "SEDAN"
+    ],
+    "lifestyles": [],
+    "origin": "domestic",
+    "specs": {
+      "price": 70,
+      "fuel": 40,
+      "design": 5,
+      "space": 5,
+      "safety": 5
+    },
+    "aiComment": "2024년 출시.                       2024.08.  출시                      준대형                  LPG…",
+    "viewCount": 0
+  },
+  {
+    "id": "danawa-4609-16",
+    "brand": "GENESIS",
+    "model": "GV70",
+    "price": 5318,
+    "fuelType": "gasoline",
+    "category": "suv",
+    "year": 2024,
+    "image": "http://autoimg.danawa.com/photo/4609/model_200.png",
+    "tags": [
+      "GENESIS",
+      "SUV"
+    ],
+    "lifestyles": [],
+    "origin": "domestic",
+    "specs": {
+      "price": 50,
+      "fuel": 40,
+      "design": 5,
+      "space": 5,
+      "safety": 5
+    },
+    "aiComment": "2024년 출시.                       2024.05.  출시                      중형SUV                  가…",
+    "viewCount": 0
+  },
+  {
+    "id": "danawa-4603-17",
+    "brand": "GENESIS",
+    "model": "G80",
+    "price": 5899,
+    "fuelType": "gasoline",
+    "category": "sedan",
+    "year": 2023,
+    "image": "http://autoimg.danawa.com/photo/4603/model_200.png",
+    "tags": [
+      "GENESIS",
+      "SEDAN"
+    ],
+    "lifestyles": [],
+    "origin": "domestic",
+    "specs": {
+      "price": 50,
+      "fuel": 40,
+      "design": 5,
+      "space": 5,
+      "safety": 5
+    },
+    "aiComment": "2023년 출시.                       2023.12.  출시                      준대형                  가솔린…",
+    "viewCount": 0
+  },
+  {
+    "id": "danawa-4585-18",
+    "brand": "KIA",
+    "model": "K5",
+    "price": 2507,
+    "fuelType": "hybrid",
+    "category": "sedan",
+    "year": 2023,
+    "image": "http://autoimg.danawa.com/photo/4585/model_200.png",
+    "tags": [
+      "KIA",
+      "SEDAN"
+    ],
+    "lifestyles": [],
+    "origin": "domestic",
+    "specs": {
+      "price": 70,
+      "fuel": 50,
+      "design": 5,
+      "space": 5,
+      "safety": 5
+    },
+    "aiComment": "2023년 출시.                       2023.11.  출시                      중형                  LPG,…",
+    "viewCount": 0
+  },
+  {
+    "id": "danawa-4667-19",
+    "brand": "TESLA",
+    "model": "Model Y",
+    "price": 4999,
+    "fuelType": "ev",
+    "category": "suv",
+    "year": 2025,
+    "image": "http://autoimg.danawa.com/photo/4667/model_200.png",
+    "tags": [
+      "TESLA",
+      "SUV"
+    ],
+    "lifestyles": [],
+    "origin": "import",
+    "specs": {
+      "price": 50,
+      "fuel": 30,
+      "design": 5,
+      "space": 5,
+      "safety": 5
+    },
+    "aiComment": "2025년 출시.                       2025.04.  출시                      중형SUV                  전…",
+    "viewCount": 0
+  },
+  {
+    "id": "danawa-4517-20",
+    "brand": "BMW",
+    "model": "5 Series",
+    "price": 6430,
+    "fuelType": "ev",
+    "category": "sedan",
+    "year": 2023,
+    "image": "http://autoimg.danawa.com/photo/4517/model_200.png",
+    "tags": [
+      "BMW",
+      "SEDAN"
+    ],
+    "lifestyles": [],
+    "origin": "import",
+    "specs": {
+      "price": 30,
+      "fuel": 60,
+      "design": 5,
+      "space": 5,
+      "safety": 5
+    },
+    "aiComment": "2023년 출시.                       2023.10.  출시                      준대형                  가솔린…",
+    "viewCount": 0
+  },
+  {
+    "id": "danawa-1901-21",
+    "brand": "HYUNDAI",
+    "model": "포터2",
+    "price": 2028,
+    "fuelType": "diesel",
+    "category": "sedan",
+    "year": 2004,
+    "image": "http://autoimg.danawa.com/photo/1901/model_200.png",
+    "tags": [
+      "HYUNDAI",
+      "SEDAN"
+    ],
+    "lifestyles": [],
+    "origin": "domestic",
+    "specs": {
+      "price": 90,
+      "fuel": 30,
+      "design": 5,
+      "space": 5,
+      "safety": 5
+    },
+    "aiComment": "2004년 출시.                       2004.01.  출시                      소형트럭                  LP…",
+    "viewCount": 0
+  },
+  {
+    "id": "danawa-4465-22",
+    "brand": "GENESIS",
+    "model": "GV80",
+    "price": 6790,
+    "fuelType": "gasoline",
+    "category": "suv",
+    "year": 2023,
+    "image": "http://autoimg.danawa.com/photo/4465/model_200.png",
+    "tags": [
+      "GENESIS",
+      "SUV"
+    ],
+    "lifestyles": [],
+    "origin": "domestic",
+    "specs": {
+      "price": 30,
+      "fuel": 40,
+      "design": 5,
+      "space": 5,
+      "safety": 5
+    },
+    "aiComment": "2023년 출시.                       2023.10.  출시                      대형SUV                  가…",
+    "viewCount": 0
+  },
+  {
+    "id": "danawa-4659-23",
+    "brand": "RENAULT",
+    "model": "그랑 콜레오스",
+    "price": 3497,
+    "fuelType": "ev",
+    "category": "suv",
+    "year": 2024,
+    "image": "http://autoimg.danawa.com/photo/4659/model_200.png",
+    "tags": [
+      "RENAULT",
+      "SUV"
+    ],
+    "lifestyles": [],
+    "origin": "import",
+    "specs": {
+      "price": 70,
+      "fuel": 50,
+      "design": 5,
+      "space": 5,
+      "safety": 5
+    },
+    "aiComment": "2024년 출시.                       2024.06.  출시                      중형SUV                  가…",
+    "viewCount": 0
+  },
+  {
+    "id": "danawa-4516-24",
+    "brand": "MERCEDES-BENZ",
+    "model": "E-Class",
+    "price": 6900,
+    "fuelType": "ev",
+    "category": "sedan",
+    "year": 2024,
+    "image": "http://autoimg.danawa.com/photo/4516/model_200.png",
+    "tags": [
+      "MERCEDES-BENZ",
+      "SEDAN"
+    ],
+    "lifestyles": [],
+    "origin": "import",
+    "specs": {
+      "price": 30,
+      "fuel": 40,
+      "design": 5,
+      "space": 5,
+      "safety": 5
+    },
+    "aiComment": "2024년 출시.                       2024.01.  출시                      준대형                  가솔린…",
+    "viewCount": 0
+  },
+  {
+    "id": "danawa-4130-25",
+    "brand": "KIA",
+    "model": "니로",
+    "price": 2756,
+    "fuelType": "hybrid",
+    "category": "suv",
+    "year": 2022,
+    "image": "http://autoimg.danawa.com/photo/4130/model_200.png",
+    "tags": [
+      "KIA",
+      "SUV"
+    ],
+    "lifestyles": [],
+    "origin": "domestic",
+    "specs": {
+      "price": 70,
+      "fuel": 100,
+      "design": 5,
+      "space": 5,
+      "safety": 5
+    },
+    "aiComment": "2022년 출시.                       2022.01.  출시                      소형SUV                  하…",
+    "viewCount": 0
+  },
+  {
+    "id": "danawa-4765-26",
+    "brand": "HYUNDAI",
+    "model": "더 뉴 스타리아",
+    "price": 3259,
+    "fuelType": "hybrid",
+    "category": "mpv",
+    "year": 2025,
+    "image": "http://autoimg.danawa.com/photo/4765/model_200.png",
+    "tags": [
+      "HYUNDAI",
+      "MPV"
+    ],
+    "lifestyles": [],
+    "origin": "domestic",
+    "specs": {
+      "price": 70,
+      "fuel": 30,
+      "design": 5,
+      "space": 5,
+      "safety": 5
+    },
+    "aiComment": "2025년 출시.                       2025.12.  출시                      대형MPV                  L…",
+    "viewCount": 0
+  },
+  {
+    "id": "danawa-3772-27",
+    "brand": "KIA",
+    "model": "봉고 3",
+    "price": 1988,
+    "fuelType": "diesel",
+    "category": "sedan",
+    "year": 2019,
+    "image": "http://autoimg.danawa.com/photo/3772/model_200.png",
+    "tags": [
+      "KIA",
+      "SEDAN"
+    ],
+    "lifestyles": [],
+    "origin": "domestic",
+    "specs": {
+      "price": 90,
+      "fuel": 30,
+      "design": 5,
+      "space": 5,
+      "safety": 5
+    },
+    "aiComment": "2019년 출시.                       2019.09.  출시                      소형트럭                  LP…",
+    "viewCount": 0
+  },
+  {
+    "id": "danawa-4554-28",
+    "brand": "KIA",
+    "model": "모닝",
+    "price": 1375,
+    "fuelType": "gasoline",
+    "category": "sedan",
+    "year": 2023,
+    "image": "http://autoimg.danawa.com/photo/4554/model_200.png",
+    "tags": [
+      "KIA",
+      "SEDAN"
+    ],
+    "lifestyles": [],
+    "origin": "domestic",
+    "specs": {
+      "price": 90,
+      "fuel": 70,
+      "design": 5,
+      "space": 5,
+      "safety": 5
+    },
+    "aiComment": "2023년 출시.                       2023.07.  출시                      경차                  가솔린9…",
+    "viewCount": 0
+  },
+  {
+    "id": "danawa-4088-29",
+    "brand": "HYUNDAI",
+    "model": "아이오닉 9",
+    "price": 6715,
+    "fuelType": "ev",
+    "category": "suv",
+    "year": 2025,
+    "image": "http://autoimg.danawa.com/photo/4088/model_200.png",
+    "tags": [
+      "HYUNDAI",
+      "SUV"
+    ],
+    "lifestyles": [],
+    "origin": "domestic",
+    "specs": {
+      "price": 30,
+      "fuel": 20,
+      "design": 5,
+      "space": 5,
+      "safety": 5
+    },
+    "aiComment": "2025년 출시.                       2025.02.  출시                      대형SUV                  전…",
+    "viewCount": 0
+  },
+  {
+    "id": "danawa-4712-0",
+    "brand": "KIA",
+    "model": "EV4",
+    "price": 4042,
+    "fuelType": "ev",
+    "category": "sedan",
+    "year": 2025,
+    "image": "https://autoimg.danawa.com/photo/4712/model_200.png",
+    "tags": [
+      "KIA",
+      "SEDAN"
+    ],
+    "lifestyles": [],
+    "origin": "domestic",
+    "specs": {
+      "price": 50,
+      "fuel": 20,
+      "design": 5,
+      "space": 5,
+      "safety": 5
+    },
+    "aiComment": "2025년 출시. \n\t\t\t\t\t\t\t\n                                    2025.03.  출시\n    \t\t\t\t\t\t\t    준중형전기(배…",
+    "viewCount": 0
+  },
+  {
+    "id": "danawa-4747-0",
+    "brand": "VOLVO",
+    "model": "XC60",
+    "price": 6482,
+    "fuelType": "ev",
+    "category": "suv",
+    "year": 2025,
+    "image": "https://autoimg.danawa.com/photo/4747/model_200.png",
+    "tags": [
+      "VOLVO",
+      "SUV"
+    ],
+    "lifestyles": [],
+    "origin": "import",
+    "specs": {
+      "price": 30,
+      "fuel": 50,
+      "design": 5,
+      "space": 5,
+      "safety": 5
+    },
+    "aiComment": "2025년 출시. \n\t\t\t\t\t\t\t\n                                    2025.08.  출시\n    \t\t\t\t\t\t\t    중형SUV가솔…",
+    "viewCount": 0
+  },
+  {
+    "id": "danawa-4528-1",
+    "brand": "BMW",
+    "model": "i5",
+    "price": 7515,
+    "fuelType": "ev",
+    "category": "sedan",
+    "year": 2023,
+    "image": "https://autoimg.danawa.com/photo/4528/model_200.png",
+    "tags": [
+      "BMW",
+      "SEDAN"
+    ],
+    "lifestyles": [],
+    "origin": "import",
+    "specs": {
+      "price": 30,
+      "fuel": 20,
+      "design": 5,
+      "space": 5,
+      "safety": 5
+    },
+    "aiComment": "2023년 출시. \n\t\t\t\t\t\t\t\n                                    2023.10.  출시\n    \t\t\t\t\t\t\t    준대형전기(배…",
+    "viewCount": 0
+  },
+  {
+    "id": "danawa-4686-2",
+    "brand": "KIA",
+    "model": "타스만",
+    "price": 3750,
+    "fuelType": "gasoline",
+    "category": "sedan",
+    "year": 2025,
+    "image": "https://autoimg.danawa.com/photo/4686/model_200.png",
+    "tags": [
+      "KIA",
+      "SEDAN"
+    ],
+    "lifestyles": [],
+    "origin": "domestic",
+    "specs": {
+      "price": 70,
+      "fuel": 40,
+      "design": 5,
+      "space": 5,
+      "safety": 5
+    },
+    "aiComment": "2025년 출시. \n\t\t\t\t\t\t\t\n                                    2025.02.  출시\n    \t\t\t\t\t\t\t    픽업/밴가솔린…",
+    "viewCount": 0
+  },
+  {
+    "id": "danawa-4016-3",
+    "brand": "GENESIS",
+    "model": "G90",
+    "price": 9617,
+    "fuelType": "gasoline",
+    "category": "sedan",
+    "year": 2021,
+    "image": "https://autoimg.danawa.com/photo/4016/model_200.png",
+    "tags": [
+      "GENESIS",
+      "SEDAN"
+    ],
+    "lifestyles": [],
+    "origin": "domestic",
+    "specs": {
+      "price": 30,
+      "fuel": 40,
+      "design": 5,
+      "space": 5,
+      "safety": 5
+    },
+    "aiComment": "2021년 출시. \n\t\t\t\t\t\t\t\n                                    2021.12.  출시\n    \t\t\t\t\t\t\t    대형가솔린3,…",
+    "viewCount": 0
+  },
+  {
+    "id": "danawa-4560-4",
+    "brand": "RENAULT",
+    "model": "아르카나",
+    "price": 2300,
+    "fuelType": "hybrid",
+    "category": "suv",
+    "year": 2024,
+    "image": "https://autoimg.danawa.com/photo/4560/model_200.png",
+    "tags": [
+      "RENAULT",
+      "SUV"
+    ],
+    "lifestyles": [],
+    "origin": "import",
+    "specs": {
+      "price": 90,
+      "fuel": 60,
+      "design": 5,
+      "space": 5,
+      "safety": 5
+    },
+    "aiComment": "2024년 출시. \n\t\t\t\t\t\t\t\n                                    2024.04.  출시\n    \t\t\t\t\t\t\t    소형SUV가솔…",
+    "viewCount": 0
+  },
+  {
+    "id": "danawa-4545-5",
+    "brand": "KGM",
+    "model": "티볼리",
+    "price": 1872,
+    "fuelType": "gasoline",
+    "category": "suv",
+    "year": 2023,
+    "image": "https://autoimg.danawa.com/photo/4545/model_200.png",
+    "tags": [
+      "KGM",
+      "SUV"
+    ],
+    "lifestyles": [],
+    "origin": "domestic",
+    "specs": {
+      "price": 90,
+      "fuel": 50,
+      "design": 5,
+      "space": 5,
+      "safety": 5
+    },
+    "aiComment": "2023년 출시. \n\t\t\t\t\t\t\t\n                                    2023.06.  출시\n    \t\t\t\t\t\t\t    소형SUVLP…",
+    "viewCount": 0
+  },
+  {
+    "id": "danawa-4196-6",
+    "brand": "BMW",
+    "model": "7 Series",
+    "price": 1,
+    "fuelType": "ev",
+    "category": "sedan",
+    "year": 2022,
+    "image": "https://autoimg.danawa.com/photo/4196/model_200.png",
+    "tags": [
+      "BMW",
+      "SEDAN"
+    ],
+    "lifestyles": [],
+    "origin": "import",
+    "specs": {
+      "price": 90,
+      "fuel": 50,
+      "design": 5,
+      "space": 5,
+      "safety": 5
+    },
+    "aiComment": "2022년 출시. \n\t\t\t\t\t\t\t\n                                    2022.12.  출시\n    \t\t\t\t\t\t\t    대형가솔린, …",
+    "viewCount": 0
+  },
+  {
+    "id": "danawa-4735-7",
+    "brand": "AUDI",
+    "model": "The new A5",
+    "price": 4939,
+    "fuelType": "diesel",
+    "category": "sedan",
+    "year": 2025,
+    "image": "https://autoimg.danawa.com/photo/4735/model_200.png",
+    "tags": [
+      "AUDI",
+      "SEDAN"
+    ],
+    "lifestyles": [],
+    "origin": "import",
+    "specs": {
+      "price": 50,
+      "fuel": 50,
+      "design": 5,
+      "space": 5,
+      "safety": 5
+    },
+    "aiComment": "2025년 출시. \n\t\t\t\t\t\t\t\n                                    2025.07.  출시\n    \t\t\t\t\t\t\t    중형가솔린, …",
+    "viewCount": 0
+  },
+  {
+    "id": "danawa-4736-8",
+    "brand": "AUDI",
+    "model": "The new Q5",
+    "price": 6073,
+    "fuelType": "diesel",
+    "category": "suv",
+    "year": 2025,
+    "image": "https://autoimg.danawa.com/photo/4736/model_200.png",
+    "tags": [
+      "AUDI",
+      "SUV"
+    ],
+    "lifestyles": [],
+    "origin": "import",
+    "specs": {
+      "price": 30,
+      "fuel": 50,
+      "design": 5,
+      "space": 5,
+      "safety": 5
+    },
+    "aiComment": "2025년 출시. \n\t\t\t\t\t\t\t\n                                    2025.07.  출시\n    \t\t\t\t\t\t\t    중형SUV가솔…",
+    "viewCount": 0
+  },
+  {
+    "id": "danawa-4005-9",
+    "brand": "폭스바겐",
+    "model": "폭스바겐 ID.4",
+    "price": 5990,
+    "fuelType": "ev",
+    "category": "suv",
+    "year": 2022,
+    "image": "https://autoimg.danawa.com/photo/4005/model_200.png",
+    "tags": [
+      "폭스바겐",
+      "SUV"
+    ],
+    "lifestyles": [],
+    "origin": "import",
+    "specs": {
+      "price": 50,
+      "fuel": 20,
+      "design": 5,
+      "space": 5,
+      "safety": 5
+    },
+    "aiComment": "2022년 출시. \n\t\t\t\t\t\t\t\n                                    2022.09.  출시\n    \t\t\t\t\t\t\t    중형SUV전기…",
+    "viewCount": 0
+  },
+  {
+    "id": "danawa-4192-10",
+    "brand": "BMW",
+    "model": "X7",
+    "price": 1,
+    "fuelType": "diesel",
+    "category": "suv",
+    "year": 2022,
+    "image": "https://autoimg.danawa.com/photo/4192/model_200.png",
+    "tags": [
+      "BMW",
+      "SUV"
+    ],
+    "lifestyles": [],
+    "origin": "import",
+    "specs": {
+      "price": 90,
+      "fuel": 30,
+      "design": 5,
+      "space": 5,
+      "safety": 5
+    },
+    "aiComment": "2022년 출시. \n\t\t\t\t\t\t\t\n                                    2022.12.  출시\n    \t\t\t\t\t\t\t    대형SUV가솔…",
+    "viewCount": 0
+  },
+  {
+    "id": "danawa-3713-11",
+    "brand": "AUDI",
+    "model": "A6",
+    "price": 5948,
+    "fuelType": "diesel",
+    "category": "sedan",
+    "year": 2019,
+    "image": "https://autoimg.danawa.com/photo/3713/model_200.png",
+    "tags": [
+      "AUDI",
+      "SEDAN"
+    ],
+    "lifestyles": [],
+    "origin": "import",
+    "specs": {
+      "price": 50,
+      "fuel": 40,
+      "design": 5,
+      "space": 5,
+      "safety": 5
+    },
+    "aiComment": "2019년 출시. \n\t\t\t\t\t\t\t\n                                    2019.10.  출시\n    \t\t\t\t\t\t\t    준대형가솔린,…",
+    "viewCount": 0
+  },
+  {
+    "id": "danawa-4173-12",
+    "brand": "TOYOTA",
+    "model": "RAV4",
+    "price": 4415,
+    "fuelType": "ev",
+    "category": "suv",
+    "year": 2022,
+    "image": "https://autoimg.danawa.com/photo/4173/model_200.png",
+    "tags": [
+      "TOYOTA",
+      "SUV"
+    ],
+    "lifestyles": [],
+    "origin": "import",
+    "specs": {
+      "price": 50,
+      "fuel": 70,
+      "design": 5,
+      "space": 5,
+      "safety": 5
+    },
+    "aiComment": "2022년 출시. \n\t\t\t\t\t\t\t\n                                    2022.04.  출시\n    \t\t\t\t\t\t\t    중형SUV하이…",
+    "viewCount": 0
+  },
+  {
+    "id": "danawa-4072-13",
+    "brand": "BMW",
+    "model": "X4",
+    "price": 6580,
+    "fuelType": "diesel",
+    "category": "suv",
+    "year": 2021,
+    "image": "https://autoimg.danawa.com/photo/4072/model_200.png",
+    "tags": [
+      "BMW",
+      "SUV"
+    ],
+    "lifestyles": [],
+    "origin": "import",
+    "specs": {
+      "price": 30,
+      "fuel": 40,
+      "design": 5,
+      "space": 5,
+      "safety": 5
+    },
+    "aiComment": "2021년 출시. \n\t\t\t\t\t\t\t\n                                    2021.11.  출시\n    \t\t\t\t\t\t\t    중형SUV가솔…",
+    "viewCount": 0
+  },
+  {
+    "id": "danawa-4632-14",
+    "brand": "RENAULT",
+    "model": "세닉 E-테크 일렉트릭",
+    "price": 5159,
+    "fuelType": "ev",
+    "category": "suv",
+    "year": 2025,
+    "image": "https://autoimg.danawa.com/photo/4632/model_200.png",
+    "tags": [
+      "RENAULT",
+      "SUV"
+    ],
+    "lifestyles": [],
+    "origin": "import",
+    "specs": {
+      "price": 50,
+      "fuel": 20,
+      "design": 5,
+      "space": 5,
+      "safety": 5
+    },
+    "aiComment": "2025년 출시. \n\t\t\t\t\t\t\t\n                                    2025.08.  출시\n    \t\t\t\t\t\t\t    소형SUV전기…",
+    "viewCount": 0
+  },
+  {
+    "id": "danawa-4703-15",
+    "brand": "BYD",
+    "model": "SEAL",
+    "price": 3990,
+    "fuelType": "ev",
+    "category": "sedan",
+    "year": 2025,
+    "image": "https://autoimg.danawa.com/photo/4703/model_200.png",
+    "tags": [
+      "BYD",
+      "SEDAN"
+    ],
+    "lifestyles": [],
+    "origin": "import",
+    "specs": {
+      "price": 70,
+      "fuel": 20,
+      "design": 5,
+      "space": 5,
+      "safety": 5
+    },
+    "aiComment": "2025년 출시. \n\t\t\t\t\t\t\t\n                                    2025.07.  출시\n    \t\t\t\t\t\t\t    중형전기(배터…",
+    "viewCount": 0
+  },
+  {
+    "id": "danawa-4564-16",
+    "brand": "HYUNDAI",
+    "model": "아반떼 N",
+    "price": 3309,
+    "fuelType": "gasoline",
+    "category": "sedan",
+    "year": 2023,
+    "image": "https://autoimg.danawa.com/photo/4564/model_200.png",
+    "tags": [
+      "HYUNDAI",
+      "SEDAN"
+    ],
+    "lifestyles": [],
+    "origin": "domestic",
+    "specs": {
+      "price": 70,
+      "fuel": 50,
+      "design": 5,
+      "space": 5,
+      "safety": 5
+    },
+    "aiComment": "2023년 출시. \n\t\t\t\t\t\t\t\n                                    2023.07.  출시\n    \t\t\t\t\t\t\t    준중형가솔린1…",
+    "viewCount": 0
+  },
+  {
+    "id": "danawa-4375-17",
+    "brand": "POLESTAR",
+    "model": "Polestar 3",
+    "price": 3000,
+    "fuelType": "ev",
+    "category": "suv",
+    "year": 2026,
+    "image": "https://autoimg.danawa.com/photo/4375/model_200.png",
+    "tags": [
+      "POLESTAR",
+      "SUV"
+    ],
+    "lifestyles": [],
+    "origin": "import",
+    "specs": {
+      "price": 70,
+      "fuel": 50,
+      "design": 5,
+      "space": 5,
+      "safety": 5
+    },
+    "aiComment": "2026년 출시. \n\t\t\t\t\t\t\t프리미엄 대형 전기 SUV, 폴스타3\n2024년 10월 세계 최초 공개\n듀얼모터와 대형 배터리 탑재, WLTP기준 600km 이상…",
+    "viewCount": 0
+  },
+  {
+    "id": "danawa-4062-18",
+    "brand": "AUDI",
+    "model": "Q4 e-tron",
+    "price": 6430,
+    "fuelType": "ev",
+    "category": "suv",
+    "year": 2022,
+    "image": "https://autoimg.danawa.com/photo/4062/model_200.png",
+    "tags": [
+      "AUDI",
+      "SUV"
+    ],
+    "lifestyles": [],
+    "origin": "import",
+    "specs": {
+      "price": 30,
+      "fuel": 20,
+      "design": 5,
+      "space": 5,
+      "safety": 5
+    },
+    "aiComment": "2022년 출시. \n\t\t\t\t\t\t\t\n                                    2022.09.  출시\n    \t\t\t\t\t\t\t    중형SUV전기…",
+    "viewCount": 0
+  },
+  {
+    "id": "danawa-4014-19",
+    "brand": "HYUNDAI",
+    "model": "스타리아",
+    "price": 2998,
+    "fuelType": "diesel",
+    "category": "mpv",
+    "year": 2021,
+    "image": "https://autoimg.danawa.com/photo/4014/model_200.png",
+    "tags": [
+      "HYUNDAI",
+      "MPV"
+    ],
+    "lifestyles": [],
+    "origin": "domestic",
+    "specs": {
+      "price": 70,
+      "fuel": 30,
+      "design": 5,
+      "space": 5,
+      "safety": 5
+    },
+    "aiComment": "2021년 출시. \n\t\t\t\t\t\t\t\n                                    2021.04.  출시\n    \t\t\t\t\t\t\t    대형MPVLP…",
+    "viewCount": 0
+  },
+  {
+    "id": "danawa-4555-20",
+    "brand": "MERCEDES-BENZ",
+    "model": "CLE",
+    "price": 6550,
+    "fuelType": "gasoline",
+    "category": "sedan",
+    "year": 2024,
+    "image": "https://autoimg.danawa.com/photo/4555/model_200.png",
+    "tags": [
+      "MERCEDES-BENZ",
+      "SEDAN"
+    ],
+    "lifestyles": [],
+    "origin": "import",
+    "specs": {
+      "price": 30,
+      "fuel": 50,
+      "design": 5,
+      "space": 5,
+      "safety": 5
+    },
+    "aiComment": "2024년 출시. \n\t\t\t\t\t\t\t\n                                    2024.02.  출시\n    \t\t\t\t\t\t\t    중형가솔린1,…",
+    "viewCount": 0
+  },
+  {
+    "id": "danawa-4476-21",
+    "brand": "BMW",
+    "model": "X6",
+    "price": 1,
+    "fuelType": "diesel",
+    "category": "suv",
+    "year": 2023,
+    "image": "https://autoimg.danawa.com/photo/4476/model_200.png",
+    "tags": [
+      "BMW",
+      "SUV"
+    ],
+    "lifestyles": [],
+    "origin": "import",
+    "specs": {
+      "price": 90,
+      "fuel": 40,
+      "design": 5,
+      "space": 5,
+      "safety": 5
+    },
+    "aiComment": "2023년 출시. \n\t\t\t\t\t\t\t\n                                    2023.07.  출시\n    \t\t\t\t\t\t\t    대형SUV가솔…",
+    "viewCount": 0
+  },
+  {
+    "id": "danawa-4066-22",
+    "brand": "KIA",
+    "model": "K9",
+    "price": 5871,
+    "fuelType": "gasoline",
+    "category": "sedan",
+    "year": 2021,
+    "image": "https://autoimg.danawa.com/photo/4066/model_200.png",
+    "tags": [
+      "KIA",
+      "SEDAN"
+    ],
+    "lifestyles": [],
+    "origin": "domestic",
+    "specs": {
+      "price": 50,
+      "fuel": 40,
+      "design": 5,
+      "space": 5,
+      "safety": 5
+    },
+    "aiComment": "2021년 출시. \n\t\t\t\t\t\t\t\n                                    2021.06.  출시\n    \t\t\t\t\t\t\t    대형가솔린3,…",
+    "viewCount": 0
+  },
+  {
+    "id": "danawa-4474-23",
+    "brand": "CHEVROLET",
+    "model": "트레일블레이저",
+    "price": 2757,
+    "fuelType": "gasoline",
+    "category": "suv",
+    "year": 2023,
+    "image": "https://autoimg.danawa.com/photo/4474/model_200.png",
+    "tags": [
+      "CHEVROLET",
+      "SUV"
+    ],
+    "lifestyles": [],
+    "origin": "import",
+    "specs": {
+      "price": 70,
+      "fuel": 60,
+      "design": 5,
+      "space": 5,
+      "safety": 5
+    },
+    "aiComment": "2023년 출시. \n\t\t\t\t\t\t\t\n                                    2023.07.  출시\n    \t\t\t\t\t\t\t    소형SUV가솔…",
+    "viewCount": 0
+  },
+  {
+    "id": "danawa-3773-24",
+    "brand": "폭스바겐",
+    "model": "폭스바겐 Atlas",
+    "price": 6779,
+    "fuelType": "gasoline",
+    "category": "suv",
+    "year": 2025,
+    "image": "https://autoimg.danawa.com/photo/3773/model_200.png",
+    "tags": [
+      "폭스바겐",
+      "SUV"
+    ],
+    "lifestyles": [],
+    "origin": "import",
+    "specs": {
+      "price": 30,
+      "fuel": 40,
+      "design": 5,
+      "space": 5,
+      "safety": 5
+    },
+    "aiComment": "2025년 출시. \n\t\t\t\t\t\t\t\n                                    2025.05.  출시\n    \t\t\t\t\t\t\t    대형SUV가솔…",
+    "viewCount": 0
+  },
+  {
+    "id": "danawa-4614-25",
+    "brand": "BMW",
+    "model": "4 Series",
+    "price": 6070,
+    "fuelType": "gasoline",
+    "category": "sedan",
+    "year": 2024,
+    "image": "https://autoimg.danawa.com/photo/4614/model_200.png",
+    "tags": [
+      "BMW",
+      "SEDAN"
+    ],
+    "lifestyles": [],
+    "origin": "import",
+    "specs": {
+      "price": 30,
+      "fuel": 60,
+      "design": 5,
+      "space": 5,
+      "safety": 5
+    },
+    "aiComment": "2024년 출시. \n\t\t\t\t\t\t\t\n                                    2024.07.  출시\n    \t\t\t\t\t\t\t    중형가솔린1,…",
+    "viewCount": 0
+  },
+  {
+    "id": "danawa-4371-26",
+    "brand": "BMW",
+    "model": "X1",
+    "price": 5260,
+    "fuelType": "diesel",
+    "category": "suv",
+    "year": 2023,
+    "image": "https://autoimg.danawa.com/photo/4371/model_200.png",
+    "tags": [
+      "BMW",
+      "SUV"
+    ],
+    "lifestyles": [],
+    "origin": "import",
+    "specs": {
+      "price": 50,
+      "fuel": 50,
+      "design": 5,
+      "space": 5,
+      "safety": 5
+    },
+    "aiComment": "2023년 출시. \n\t\t\t\t\t\t\t\n                                    2023.03.  출시\n    \t\t\t\t\t\t\t    소형SUV가솔…",
+    "viewCount": 0
+  },
+  {
+    "id": "danawa-4513-27",
+    "brand": "POLESTAR",
+    "model": "Polestar 4",
+    "price": 6690,
+    "fuelType": "ev",
+    "category": "suv",
+    "year": 2024,
+    "image": "https://autoimg.danawa.com/photo/4513/model_200.png",
+    "tags": [
+      "POLESTAR",
+      "SUV"
+    ],
+    "lifestyles": [],
+    "origin": "import",
+    "specs": {
+      "price": 30,
+      "fuel": 20,
+      "design": 5,
+      "space": 5,
+      "safety": 5
+    },
+    "aiComment": "2024년 출시. \n\t\t\t\t\t\t\t\n                                    2024.08.  출시\n    \t\t\t\t\t\t\t    중형SUV전기…",
+    "viewCount": 0
+  },
+  {
+    "id": "danawa-3668-28",
+    "brand": "AUDI",
+    "model": "Q3",
+    "price": 5021,
+    "fuelType": "diesel",
+    "category": "suv",
+    "year": 2020,
+    "image": "https://autoimg.danawa.com/photo/3668/model_200.png",
+    "tags": [
+      "AUDI",
+      "SUV"
+    ],
+    "lifestyles": [],
+    "origin": "import",
+    "specs": {
+      "price": 50,
+      "fuel": 50,
+      "design": 5,
+      "space": 5,
+      "safety": 5
+    },
+    "aiComment": "2020년 출시. \n\t\t\t\t\t\t\t\n                                    2020.05.  출시\n    \t\t\t\t\t\t\t    중형SUV가솔…",
+    "viewCount": 0
+  },
+  {
+    "id": "danawa-4027-29",
+    "brand": "TESLA",
+    "model": "Model X",
+    "price": 1,
+    "fuelType": "ev",
+    "category": "suv",
+    "year": 2021,
+    "image": "https://autoimg.danawa.com/photo/4027/model_200.png",
+    "tags": [
+      "TESLA",
+      "SUV"
+    ],
+    "lifestyles": [],
+    "origin": "import",
+    "specs": {
+      "price": 90,
+      "fuel": 20,
+      "design": 5,
+      "space": 5,
+      "safety": 5
+    },
+    "aiComment": "2021년 출시. \n\t\t\t\t\t\t\t\n                                    2021.01.  출시\n    \t\t\t\t\t\t\t    대형SUV전기…",
+    "viewCount": 0
+  }
+]

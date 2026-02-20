@@ -10,6 +10,8 @@ interface AIStrategySectionProps {
   budget: number[]
   fuelTypes: string[]
   lifestyles: string[]
+  /** 가져오기(다나와 등)로 사용 중인 목록이 있으면 전달 */
+  cars?: Car[]
 }
 
 interface StrategyCard {
@@ -62,10 +64,12 @@ export function AIStrategySection({
   budget,
   fuelTypes,
   lifestyles,
+  cars: carsOverride,
 }: AIStrategySectionProps) {
+  const carList = carsOverride ?? cars
   const strategies = useMemo((): StrategyCard[] => {
     // Score all cars
-    const scored = cars
+    const scored = carList
       .map((car) => ({
         car,
         score: scoreCar(car, budget, fuelTypes, lifestyles),
@@ -148,7 +152,7 @@ export function AIStrategySection({
     }
 
     return result
-  }, [budget, fuelTypes, lifestyles])
+  }, [budget, fuelTypes, lifestyles, carList])
 
   const activeFilterCount =
     (fuelTypes.length > 0 ? 1 : 0) + (lifestyles.length > 0 ? 1 : 0)

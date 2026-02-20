@@ -1,9 +1,13 @@
 "use client"
 
 import Link from "next/link"
-import { Heart, User, LogOut } from "lucide-react"
+import { Heart } from "lucide-react"
+import { useCarLiked } from "@/contexts/car-liked-context"
 
 export function GNB() {
+  const { likedIds } = useCarLiked()
+  const count = likedIds.size
+
   return (
     <header className="sticky top-0 z-50 flex h-14 items-center justify-between border-b border-border bg-background/95 px-4 backdrop-blur-sm lg:px-6">
       <div className="flex items-center gap-3">
@@ -38,24 +42,18 @@ export function GNB() {
         </div>
       </div>
       <div className="flex items-center gap-1">
-        <button
-          className="rounded-lg p-2 text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground"
+        <Link
+          href="/wishlist"
+          className="relative rounded-lg p-2 text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground"
           aria-label="찜 목록"
         >
           <Heart className="h-5 w-5" />
-        </button>
-        <button
-          className="rounded-lg p-2 text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground"
-          aria-label="프로필"
-        >
-          <User className="h-5 w-5" />
-        </button>
-        <button
-          className="rounded-lg p-2 text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground"
-          aria-label="로그아웃"
-        >
-          <LogOut className="h-5 w-5" />
-        </button>
+          {count > 0 && (
+            <span className="absolute -right-0.5 -top-0.5 flex h-4 min-w-4 items-center justify-center rounded-full bg-primary px-1 text-[10px] font-bold text-primary-foreground">
+              {count > 99 ? "99+" : count}
+            </span>
+          )}
+        </Link>
       </div>
     </header>
   )

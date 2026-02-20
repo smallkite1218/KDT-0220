@@ -1,11 +1,14 @@
 "use client"
 
+import { useMemo } from "react"
 import { SlidersHorizontal } from "lucide-react"
 import { Slider } from "@/components/ui/slider"
 import { Checkbox } from "@/components/ui/checkbox"
-import { brandGroups } from "@/lib/car-data"
+import { getBrandGroupsFromCars } from "@/lib/car-data"
+import type { Car } from "@/lib/car-data"
 
 interface FilterSidebarProps {
+  cars: Car[]
   budget: number[]
   setBudget: (v: number[]) => void
   fuelTypes: string[]
@@ -16,32 +19,11 @@ interface FilterSidebarProps {
   setLifestyles: (v: string[]) => void
   brands: string[]
   setBrands: (v: string[]) => void
+  /** 데이터 기반 옵션 (차종/연료/라이프스타일) */
+  categoryOptions: { id: string; label: string }[]
+  fuelOptions: { id: string; label: string }[]
+  lifestyleTags: string[]
 }
-
-const categoryOptions = [
-  { id: "suv", label: "SUV" },
-  { id: "sedan", label: "세단" },
-  { id: "mpv", label: "MPV" },
-]
-
-const fuelOptions = [
-  { id: "gasoline", label: "가솔린" },
-  { id: "diesel", label: "디젤" },
-  { id: "hybrid", label: "하이브리드" },
-  { id: "ev", label: "전기차" },
-  { id: "lpg", label: "LPG" },
-]
-
-const lifestyleTags = [
-  "출퇴근용",
-  "캠핑",
-  "아이와 함께",
-  "드라이빙 매니아",
-  "시내주행",
-  "비즈니스",
-  "주말여행",
-  "첫 차",
-]
 
 function formatPrice(v: number) {
   if (v >= 10000) return `${(v / 10000).toFixed(1)}억`
@@ -50,6 +32,7 @@ function formatPrice(v: number) {
 }
 
 export function FilterSidebar({
+  cars,
   budget,
   setBudget,
   fuelTypes,
@@ -60,7 +43,16 @@ export function FilterSidebar({
   setLifestyles,
   brands,
   setBrands,
+  categoryOptions,
+  fuelOptions,
+  lifestyleTags,
 }: FilterSidebarProps) {
+  const brandGroups = useMemo(() => getBrandGroupsFromCars(cars), [cars])
+  const budgetRange = useMemo(() => {
+    if (cars.length === 0) return { min: 0, max: 55000 }
+    const prices = cars.map((c) => c.price)
+    return { min: Math.min(...prices), max: Math.max(...prices) }
+  }, [cars])
   function toggleCategory(id: string) {
     setCategories(
       categories.includes(id)
@@ -108,9 +100,9 @@ export function FilterSidebar({
         <Slider
           value={budget}
           onValueChange={setBudget}
-          min={0}
-          max={55000}
-          step={500}
+          min={budgetRange.min}
+          max={Math.max(budgetRange.max, budgetRange.min + 1000)}
+          step={100}
           className="mb-2"
         />
         <div className="flex items-center justify-between text-xs text-muted-foreground">

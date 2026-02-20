@@ -1,5 +1,6 @@
 "use client"
 
+import { useMemo } from "react"
 import { SlidersHorizontal } from "lucide-react"
 import {
   Sheet,
@@ -10,9 +11,11 @@ import {
 } from "@/components/ui/sheet"
 import { Slider } from "@/components/ui/slider"
 import { Checkbox } from "@/components/ui/checkbox"
-import { brandGroups } from "@/lib/car-data"
+import { getBrandGroupsFromCars } from "@/lib/car-data"
+import type { Car } from "@/lib/car-data"
 
 interface MobileFilterProps {
+  cars: Car[]
   budget: number[]
   setBudget: (v: number[]) => void
   fuelTypes: string[]
@@ -23,32 +26,10 @@ interface MobileFilterProps {
   setLifestyles: (v: string[]) => void
   brands: string[]
   setBrands: (v: string[]) => void
+  categoryOptions: { id: string; label: string }[]
+  fuelOptions: { id: string; label: string }[]
+  lifestyleTags: string[]
 }
-
-const categoryOptions = [
-  { id: "suv", label: "SUV" },
-  { id: "sedan", label: "세단" },
-  { id: "mpv", label: "MPV" },
-]
-
-const fuelOptions = [
-  { id: "gasoline", label: "가솔린" },
-  { id: "diesel", label: "디젤" },
-  { id: "hybrid", label: "하이브리드" },
-  { id: "ev", label: "전기차" },
-  { id: "lpg", label: "LPG" },
-]
-
-const lifestyleTags = [
-  "출퇴근용",
-  "캠핑",
-  "아이와 함께",
-  "드라이빙 매니아",
-  "시내주행",
-  "비즈니스",
-  "주말여행",
-  "첫 차",
-]
 
 function formatPrice(v: number) {
   if (v >= 10000) return `${(v / 10000).toFixed(1)}억`
@@ -57,6 +38,7 @@ function formatPrice(v: number) {
 }
 
 export function MobileFilter({
+  cars,
   budget,
   setBudget,
   fuelTypes,
@@ -67,7 +49,11 @@ export function MobileFilter({
   setLifestyles,
   brands,
   setBrands,
+  categoryOptions,
+  fuelOptions,
+  lifestyleTags,
 }: MobileFilterProps) {
+  const brandGroups = useMemo(() => getBrandGroupsFromCars(cars), [cars])
   function toggleCategory(id: string) {
     setCategories(
       categories.includes(id)

@@ -22,18 +22,41 @@ export interface Car {
   viewCount?: number
 }
 
+/**
+ * 이미지: 직접 호스팅 대신 Unsplash 무료 이미지 사용.
+ * 초기에는 Unsplash, 이후 각 브랜드 공식 홈페이지 이미지 URL로 교체 가능.
+ * @see https://unsplash.com/images/things/car
+ */
+const UNSPLASH_CAR_IMAGES: Record<string, string> = {
+  sedan:
+    "https://images.unsplash.com/photo-1494976380322-0f4b8c367f65?w=600&auto=format&fit=crop",
+  suv:
+    "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=600&auto=format&fit=crop",
+  ev: "https://images.unsplash.com/photo-1593941707882-a5bba14938c7?w=600&auto=format&fit=crop",
+  default:
+    "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=600&auto=format&fit=crop",
+}
+const carImg = (category: "sedan" | "suv" | "mpv", fuelType: string) =>
+  fuelType === "ev"
+    ? UNSPLASH_CAR_IMAGES.ev
+    : category === "suv"
+      ? UNSPLASH_CAR_IMAGES.suv
+      : category === "sedan"
+        ? UNSPLASH_CAR_IMAGES.sedan
+        : UNSPLASH_CAR_IMAGES.default
+
 export const cars: Car[] = [
   // ─── 국산 ───
   {
     id: "tucson-hybrid",
     brand: "HYUNDAI",
     model: "Tucson Hybrid",
-    price: 3450,
+    price: 3489,
     viewCount: 2450,
     fuelType: "hybrid",
     category: "suv",
     year: 2025,
-    image: "/images/tucson-hybrid.jpg",
+    image: carImg("suv", "hybrid"),
     tags: ["SUV", "가성비"],
     lifestyles: ["출퇴근용", "캠핑", "아이와 함께", "주말여행"],
     origin: "domestic",
@@ -49,7 +72,7 @@ export const cars: Car[] = [
     fuelType: "gasoline",
     category: "sedan",
     year: 2025,
-    image: "/images/sonata-nline.jpg",
+    image: carImg("sedan", "gasoline"),
     tags: ["스포츠", "세단"],
     lifestyles: ["출퇴근용", "드라이빙 매니아", "시내주행", "첫 차"],
     origin: "domestic",
@@ -65,7 +88,7 @@ export const cars: Car[] = [
     fuelType: "ev",
     category: "suv",
     year: 2025,
-    image: "/images/ev6-gt.jpg",
+    image: carImg("suv", "ev"),
     tags: ["전기차", "퍼포먼스"],
     lifestyles: ["드라이빙 매니아", "시내주행", "주말여행"],
     origin: "domestic",
@@ -81,7 +104,7 @@ export const cars: Car[] = [
     fuelType: "diesel",
     category: "suv",
     year: 2025,
-    image: "/images/sportage.jpg",
+    image: carImg("suv", "diesel"),
     tags: ["SUV", "패밀리"],
     lifestyles: ["아이와 함께", "캠핑", "주말여행", "출퇴근용"],
     origin: "domestic",
@@ -93,11 +116,11 @@ export const cars: Car[] = [
     id: "genesis-g80",
     brand: "GENESIS",
     model: "G80",
-    price: 5870,
+    price: 5899,
     fuelType: "gasoline",
     category: "sedan",
     year: 2025,
-    image: "/images/genesis-g80.jpg",
+    image: carImg("sedan", "gasoline"),
     tags: ["럭셔리", "세단"],
     lifestyles: ["비즈니스", "드라이빙 매니아", "주말여행"],
     origin: "domestic",
@@ -109,12 +132,12 @@ export const cars: Car[] = [
     id: "ioniq5",
     brand: "HYUNDAI",
     model: "IONIQ 5",
-    price: 4980,
+    price: 5030,
     viewCount: 1870,
     fuelType: "ev",
     category: "suv",
     year: 2025,
-    image: "/images/ioniq5.jpg",
+    image: carImg("suv", "ev"),
     tags: ["전기차", "패밀리"],
     lifestyles: ["캠핑", "아이와 함께", "시내주행", "첫 차", "주말여행"],
     origin: "domestic",
@@ -133,7 +156,7 @@ export const cars: Car[] = [
     fuelType: "gasoline",
     category: "sedan",
     year: 2025,
-    image: "/images/bmw-3series.jpg",
+    image: carImg("sedan", "gasoline"),
     tags: ["스포츠", "세단"],
     lifestyles: ["드라이빙 매니아", "비즈니스", "출퇴근용"],
     origin: "import",
@@ -149,7 +172,7 @@ export const cars: Car[] = [
     fuelType: "gasoline",
     category: "suv",
     year: 2025,
-    image: "/images/bmw-x5.jpg",
+    image: carImg("suv", "gasoline"),
     tags: ["럭셔리", "SUV"],
     lifestyles: ["비즈니스", "아이와 함께", "캠핑", "드라이빙 매니아"],
     origin: "import",
@@ -165,7 +188,7 @@ export const cars: Car[] = [
     fuelType: "gasoline",
     category: "sedan",
     year: 2025,
-    image: "/images/benz-eclass.jpg",
+    image: carImg("sedan", "gasoline"),
     tags: ["럭셔리", "세단"],
     lifestyles: ["비즈니스", "출퇴근용", "드라이빙 매니아"],
     origin: "import",
@@ -182,7 +205,7 @@ export const cars: Car[] = [
     fuelType: "gasoline",
     category: "suv",
     year: 2025,
-    image: "/images/benz-glc.jpg",
+    image: carImg("suv", "gasoline"),
     tags: ["럭셔리", "SUV"],
     lifestyles: ["비즈니스", "아이와 함께", "주말여행"],
     origin: "import",
@@ -194,11 +217,11 @@ export const cars: Car[] = [
     id: "audi-a6",
     brand: "AUDI",
     model: "A6 45 TFSI quattro",
-    price: 7350,
+    price: 7100,
     fuelType: "gasoline",
     category: "sedan",
     year: 2025,
-    image: "/images/audi-a6.jpg",
+    image: carImg("sedan", "gasoline"),
     tags: ["럭셔리", "세단"],
     lifestyles: ["비즈니스", "드라이빙 매니아", "출퇴근용"],
     origin: "import",
@@ -212,11 +235,11 @@ export const cars: Car[] = [
     id: "tesla-model3",
     brand: "TESLA",
     model: "Model 3",
-    price: 5490,
+    price: 5199,
     fuelType: "ev",
     category: "sedan",
     year: 2025,
-    image: "/images/tesla-model3.jpg",
+    image: carImg("sedan", "ev"),
     tags: ["전기차", "테크"],
     lifestyles: ["출퇴근용", "시내주행", "드라이빙 매니아", "첫 차"],
     origin: "import",
@@ -228,12 +251,12 @@ export const cars: Car[] = [
     id: "tesla-modely",
     brand: "TESLA",
     model: "Model Y",
-    price: 5990,
+    price: 5299,
     viewCount: 3120,
     fuelType: "ev",
     category: "suv",
     year: 2025,
-    image: "/images/tesla-modely.jpg",
+    image: carImg("suv", "ev"),
     tags: ["전기차", "패밀리"],
     lifestyles: ["아이와 함께", "캠핑", "출퇴근용", "시내주행"],
     origin: "import",
@@ -251,7 +274,7 @@ export const cars: Car[] = [
     fuelType: "hybrid",
     category: "sedan",
     year: 2025,
-    image: "/images/toyota-camry.jpg",
+    image: carImg("sedan", "hybrid"),
     tags: ["하이브리드", "세단"],
     lifestyles: ["출퇴근용", "시내주행", "비즈니스"],
     origin: "import",
@@ -267,7 +290,7 @@ export const cars: Car[] = [
     fuelType: "hybrid",
     category: "suv",
     year: 2025,
-    image: "/images/toyota-rav4.jpg",
+    image: carImg("suv", "hybrid"),
     tags: ["하이브리드", "SUV"],
     lifestyles: ["캠핑", "아이와 함께", "주말여행", "출퇴근용"],
     origin: "import",
@@ -283,7 +306,7 @@ export const cars: Car[] = [
     fuelType: "hybrid",
     category: "sedan",
     year: 2025,
-    image: "/images/honda-civic.jpg",
+    image: carImg("sedan", "hybrid"),
     tags: ["하이브리드", "스포츠"],
     lifestyles: ["출퇴근용", "드라이빙 매니아", "시내주행", "첫 차"],
     origin: "import",
@@ -301,7 +324,7 @@ export const cars: Car[] = [
     fuelType: "hybrid",
     category: "suv",
     year: 2025,
-    image: "/images/volvo-xc60.jpg",
+    image: carImg("suv", "hybrid"),
     tags: ["안전", "럭셔리"],
     lifestyles: ["아이와 함께", "비즈니스", "캠핑", "주말여행"],
     origin: "import",
@@ -319,7 +342,7 @@ export const cars: Car[] = [
     fuelType: "ev",
     category: "suv",
     year: 2025,
-    image: "/images/porsche-macan.jpg",
+    image: carImg("suv", "ev"),
     tags: ["스포츠", "전기차"],
     lifestyles: ["드라이빙 매니아", "비즈니스", "주말여행"],
     origin: "import",
@@ -339,6 +362,86 @@ export const lifestyleTags = [
   "주말여행",
   "첫 차",
 ]
+
+/** 브랜드 ID → 한글 라벨 (사이드바 등 표시용) */
+export const brandIdToLabel: Record<string, string> = {
+  HYUNDAI: "현대",
+  KIA: "기아",
+  GENESIS: "제네시스",
+  TESLA: "테슬라",
+  BMW: "BMW",
+  "MERCEDES-BENZ": "벤츠",
+  AUDI: "아우디",
+  TOYOTA: "토요타",
+  HONDA: "혼다",
+  VOLVO: "볼보",
+  PORSCHE: "포르쉐",
+  RENAULT: "르노코리아",
+  CHEVROLET: "쉐보레",
+  KGM: "KGM",
+  DONGFENG: "동풍",
+  SEVO: "쎄보모빌리티",
+  SMARTEV: "SMART EV",
+  DPECO: "디피코",
+  MYBV: "마이브",
+  JSM: "제이스모빌리티",
+  BYD: "BYD",
+}
+
+/** 차종 id → 한글 라벨 */
+export const categoryLabels: Record<string, string> = {
+  sedan: "세단",
+  suv: "SUV",
+  mpv: "MPV",
+}
+
+/** 차량 목록에서 실제 존재하는 브랜드만 추려 국산/수입 그룹으로 반환 */
+export function getBrandGroupsFromCars(cars: Car[]): {
+  domestic: { id: string; label: string }[]
+  import: { id: string; label: string }[]
+} {
+  const seen = new Set<string>()
+  const domestic: { id: string; label: string }[] = []
+  const importBrands: { id: string; label: string }[] = []
+  for (const car of cars) {
+    if (seen.has(car.brand)) continue
+    seen.add(car.brand)
+    const label = brandIdToLabel[car.brand] ?? car.brand
+    if (car.origin === "domestic") domestic.push({ id: car.brand, label })
+    else importBrands.push({ id: car.brand, label })
+  }
+  domestic.sort((a, b) => (a.label < b.label ? -1 : 1))
+  importBrands.sort((a, b) => (a.label < b.label ? -1 : 1))
+  return { domestic, import: importBrands }
+}
+
+/** 차량 목록에서 실제 존재하는 차종만 추려 옵션 배열 반환 (데이터 기반) */
+export function getCategoryOptionsFromCars(cars: Car[]): { id: string; label: string }[] {
+  const set = new Set<string>()
+  for (const car of cars) set.add(car.category)
+  return Array.from(set)
+    .sort()
+    .map((id) => ({ id, label: categoryLabels[id] ?? id }))
+}
+
+/** 차량 목록에서 실제 존재하는 연료 타입만 추려 옵션 배열 반환 (데이터 기반) */
+export function getFuelOptionsFromCars(cars: Car[]): { id: string; label: string }[] {
+  const set = new Set<string>()
+  for (const car of cars) set.add(car.fuelType)
+  return Array.from(set)
+    .sort()
+    .map((id) => ({ id, label: fuelTypeLabels[id] ?? id }))
+}
+
+/** 차량 목록에서 실제 사용된 라이프스타일 태그만 추려 반환. 없으면 기본 lifestyleTags 사용 */
+export function getLifestyleTagsFromCars(cars: Car[]): string[] {
+  const set = new Set<string>()
+  for (const car of cars) {
+    for (const tag of car.lifestyles) set.add(tag)
+  }
+  if (set.size === 0) return [...lifestyleTags]
+  return Array.from(set).sort()
+}
 
 export const brandGroups = {
   domestic: [
@@ -366,6 +469,9 @@ export const fuelTypeLabels: Record<string, string> = {
   lpg: "LPG",
 }
 
+const RANKING_FILLS = ["#00D09C", "#00B386", "#009970", "#33DDAF", "#66E8C3"]
+
+/** 하드코딩 랭킹 (cars 미제공 시 폴백) */
 export const rankingData = [
   { name: "Tesla Model Y", value: 3120, fill: "#00D09C" },
   { name: "Tucson HEV", value: 2450, fill: "#00B386" },
@@ -373,3 +479,21 @@ export const rankingData = [
   { name: "BMW 3 Series", value: 2050, fill: "#33DDAF" },
   { name: "IONIQ 5", value: 1870, fill: "#66E8C3" },
 ].slice(0, 5)
+
+/** 차량 목록에서 인기 랭킹 Top5 생성 (viewCount → 가격 낮은 순). value가 전부 0이면 5~1로 상대 표시 */
+export function getRankingDataFromCars(cars: Car[]): { name: string; value: number; fill: string }[] {
+  if (cars.length === 0) return rankingData
+  const sorted = [...cars].sort((a, b) => {
+    const va = a.viewCount ?? 0
+    const vb = b.viewCount ?? 0
+    if (vb !== va) return vb - va
+    return a.price - b.price
+  })
+  const top5 = sorted.slice(0, 5)
+  const hasViewCount = top5.some((c) => (c.viewCount ?? 0) > 0)
+  return top5.map((car, i) => ({
+    name: `${brandIdToLabel[car.brand] ?? car.brand} ${car.model}`,
+    value: hasViewCount ? (car.viewCount ?? 0) : 5 - i,
+    fill: RANKING_FILLS[i] ?? RANKING_FILLS[0],
+  }))
+}
